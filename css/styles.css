@@ -1907,3 +1907,92 @@ body.keyboard-navigation *:focus {
 .uppercase { text-transform: uppercase; }
 .capitalize { text-transform: capitalize; }
 
+/* Login Modal Styles */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 2000;
+    }
+
+    .modal-content {
+        background: white;
+        width: 400px;
+        margin: 100px auto;
+        padding: 30px;
+        border-radius: 8px;
+        border-top: 4px solid #9333ea;
+    }
+
+    .modal-close {
+        float: right;
+        font-size: 28px;
+        cursor: pointer;
+        color: #999;
+    }
+
+    .modal-close:hover {
+        color: #ef4444;
+    }
+
+    .modal-content h2 {
+        color: #9333ea;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .modal-subtitle {
+        text-align: center;
+        color: #666;
+        margin-bottom: 30px;
+    }
+
+    .login-form input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 2px solid #ddd;
+        border-radius: 6px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+    .login-form input:focus {
+        border-color: #9333ea;
+        outline: none;
+    }
+
+    .login-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 500;
+    }
+
+    .login-footer {
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #ddd;
+    }
+
+    .forgot-link,
+    .signup-link {
+        color: #9333ea;
+        text-decoration: none;
+    }
+
+    .forgot-link:hover,
+    .signup-link:hover {
+        color: #f97316;
+    }
+
+    @media (max-width: 480px) {
+        .modal-content {
+            width: 90%;
+            margin: 50px auto;
+        }
+    }
